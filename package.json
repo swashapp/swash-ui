@@ -1,0 +1,33 @@
+{
+  "name": "react-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@google/maps": "^0.5.5",
+    "axios": "^0.18.0",
+    "google-maps": "^3.3.0",
+    "mdbreact": "^4.9.0",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-html-table-to-excel": "^2.0.0",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.0.5"
+  },
+  "scripts": {
+    "start": " react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "proxy": "http://172.20.140.143:8060"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "proxy": "http://172.20.140.185:8080/AccessToAccount",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 5",
+    "not op_mini all"
+  ]
+}
