@@ -1,5 +1,49 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+
+
+
+
+
+
+
+
+
+
+
+# Zare
+
+## 1 - Install
+
+### `npm install`
+
+## 2 - Fix
+
+### `npm audit fix`
+
+## 3 - Start
+
+### `npm start`
+
+## 4 - Build
+
+### `npm run build`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:
