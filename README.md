@@ -31,7 +31,19 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### `npm run build`
 
 
+## After Build
 
+### 1- Replace Resources in Html file starting with '/static' with './static'
+
+### 2- Copu the Inline script from HTML file to file :
+
+`static/js/loader.js` 
+
+### 3- Add The blow tag to head of the HTML file
+
+`<script src="./static/js/loader.js"></script>`
+
+### 4- Replace urls starting with '/static/' with '../' in css files.
 
 
 
