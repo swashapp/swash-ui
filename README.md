@@ -33,17 +33,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## After Build
 
+### 0- Copy index.html along with static folder to dashboard folder in extension root directory
+
 ### 1- Replace Resources in Html file starting with '/static' with './static'
 
-### 2- Copu the Inline script from HTML file to file :
+### 2- Copy the Inline script from HTML file to file :
 
-`static/js/loader.js` 
+`sc.js` 
 
-### 3- Add The blow tag to head of the HTML file
-
-`<script src="./static/js/loader.js"></script>`
-
-### 4- Replace urls starting with '/static/' with '../' in css files.
+### 3- Replace urls starting with '/static/' with '../' in css files.
 
 
 
