@@ -30,8 +30,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### `npm run build`
 
+### `npm run migrate`
 
-## After Build
+you can use `npm run migrate -- --dst=../firefox/dashboard2` if you want to change dst folder or src.
+
+
+
+
+## Manual After Build
 
 ### 0- Copy index.html along with static folder to dashboard folder in extension root directory
 

@@ -7,6 +7,7 @@
     "axios": "^0.18.0",
     "google-maps": "^3.3.0",
     "mdbreact": "^4.9.0",
+    "node-html-parser": "^1.1.12",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-html-table-to-excel": "^2.0.0",
@@ -19,6 +20,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "salam": "ipconfig",
+    "migrate": "node migrate.js",
     "proxy": "http://172.20.140.143:8060"
   },
   "eslintConfig": {
