@@ -2,7 +2,6 @@ console.log('More option: npm run migrate -- --src=./build --dst=../firefox/dash
 //console.log('process.argv', process.argv, process.env);
 
 const fs = require('fs-extra')
-const parse = require('node-html-parser')
 
 //import { parse } from 'node-html-parser';
 
