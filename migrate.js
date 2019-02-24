@@ -36,6 +36,12 @@ function copy_file(src, dst, transform){
     });
 }
 
+function copy_file_b(src, dst){
+    file1=fs.createReadStream(src,{ flags: 'r',  encoding: "binary",});
+    dest=fs.createWriteStream(dst,{ flags: 'w',  encoding: "binary",});
+    file1.pipe(dest, { end: false });
+}
+
 function copy_folder(src, dst, callbacks){    
     fs.readdir(src, function(err, items) {
         //console.log(items);
@@ -46,7 +52,11 @@ function copy_folder(src, dst, callbacks){
             }else{
                 for(var filter of callbacks){
                     if((src+ items[i]).match(filter["filter"])){
-                        copy_file(src+ items[i],dst+ items[i],filter["callback"]);
+                        if(filter.binary){
+                            copy_file_b(src+ items[i],dst+ items[i]);
+                        }else{
+                            copy_file(src+ items[i],dst+ items[i],filter["callback"]);
+                        }
                     }
                 }
             }
@@ -109,5 +119,6 @@ console.log('copying folder static')
 copy_folder(src + "/",dst + "/", [
             {filter:".*index\.html$",callback:transform_index}, 
             {filter:".*\.css$",callback:transform_css},
-            {filter:".*static\/media.*",callback:null},
+            {filter:".*\.map$",callback:null},
+            {filter:".*static\/media.*",callback:null,binary:true},
             {filter:".*static\/js\/.*\.js$",callback:null}]);
