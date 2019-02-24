@@ -21,6 +21,7 @@
     "eject": "react-scripts eject",
     "salam": "ipconfig",
     "migrate": "node migrate.js",
+    "clean": "node clean.js",
     "proxy": "http://172.20.140.143:8060"
   },
   "eslintConfig": {

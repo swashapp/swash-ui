@@ -9,6 +9,16 @@ const fs = require('fs-extra')
 var src = "./build"
 var dst = "../firefox/dashboard"
 
+for(var arg of process.argv){
+    if(arg.startsWith("--src=")){
+        src = arg.replace("--src=","");
+    }
+    if(arg.startsWith("--dst=")){
+        dst = arg.replace("--dst=","");
+    }
+}
+console.log("Src=", src,", Dst=",dst);
+
 
 function copy_file(src, dst, transform){    
     fs.readFile(src , 'utf8', function(err, contents) {
@@ -77,7 +87,6 @@ function transform_css(err, contents){
     return contents.replace(/\/static\//g,"../");    
 }
 
-
 if (!fs.existsSync(dst)){
     fs.mkdirSync(dst);
 }
@@ -94,15 +103,7 @@ if (!fs.existsSync(dst+ "/static/media")){
     fs.mkdirSync(dst+ "/static/media");
 }
 
-for(var arg of process.argv){
-    if(arg.startsWith("--src=")){
-        src = arg.replace("--src=","");
-    }
-    if(arg.startsWith("--dst=")){
-        dst = arg.replace("--dst=","");
-    }
-}
-console.log("Src=", src,", Dst=",dst);
+
 
 console.log('copying folder static')
 copy_folder(src + "/",dst + "/", [
