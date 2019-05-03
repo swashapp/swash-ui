@@ -5,16 +5,20 @@
   "dependencies": {
     "@google/maps": "^0.5.5",
     "axios": "^0.18.0",
+    "globalize": "^1.4.2",
     "google-maps": "^3.3.0",
     "mdbootstrap": "^4.7.7",
     "mdbreact": "^4.13.0",
     "node-html-parser": "^1.1.12",
     "react": "^16.8.1",
+    "react-circular-progressbar": "^1.2.0",
     "react-dom": "^16.8.1",
     "react-html-table-to-excel": "^2.0.0",
     "react-markdown": "^4.0.6",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "^2.1.5"
+    "react-scripts": "^2.1.5",
+    "react-widgets": "^4.4.11",    
+    "react-widgets-simple-number": "^4.1.23"
   },
   "scripts": {
     "start": " react-scripts start",
