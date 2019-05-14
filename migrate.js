@@ -1,4 +1,4 @@
-console.log('More option: npm run migrate -- --src=./build --dst=../firefox/dashboard')
+console.log('More option: npm run migrate -- --src=./build --dst=../surf-streamr/dashboard')
 //console.log('process.argv', process.argv, process.env);
 
 const fs = require('fs-extra')
@@ -7,7 +7,7 @@ const fs = require('fs-extra')
 
 
 var src = "./build"
-var dst = "../firefox/dashboard"
+var dst = "../surf-streamr/dashboard"
 
 for(var arg of process.argv){
     if(arg.startsWith("--src=")){
