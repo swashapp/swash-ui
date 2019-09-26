@@ -39,7 +39,8 @@ function copy_file(src, dst, transform){
 function copy_file_b(src, dst){
     file1=fs.createReadStream(src,{ flags: 'r',  encoding: "binary",});
     dest=fs.createWriteStream(dst,{ flags: 'w',  encoding: "binary",});
-    file1.pipe(dest, { end: false });
+    file1.pipe(dest);
+    console.log(dst + ": file copied binary.");
 }
 
 function copy_folder(src, dst, callbacks){    
@@ -57,6 +58,8 @@ function copy_folder(src, dst, callbacks){
                         }else{
                             copy_file(src+ items[i],dst+ items[i],filter["callback"]);
                         }
+                    }else{
+                        // console.log("Ignoring: " + src+ items[i] + ": rejected by filter: " + filter["filter"]);
                     }
                 }
             }
