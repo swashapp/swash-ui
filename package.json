@@ -1,23 +1,14 @@
 {
-  "name": "react-app",
+  "name": "Swash",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@google/maps": "^0.5.5",
-    "axios": "^0.18.1",
-    "globalize": "^1.4.2",
-    "google-maps": "^3.3.0",
     "mdbootstrap": "^4.7.7",
     "mdbreact": "^4.13.0",
     "node-html-parser": "^1.1.12",
     "react": "^16.10.0",
-    "react-circular-progressbar": "^1.2.1",
     "react-collapse": "^4.0.3",
-    "react-contextmenu": "^2.11.0",
-    "react-countdown-clock": "^2.6.0",
     "react-dom": "^16.10.0",
-    "react-html-table-to-excel": "^2.0.0",
-    "react-markdown": "^4.0.6",
     "react-motion": "^0.5.2",
     "react-notifications": "^1.4.3",
     "react-router-dom": "^4.3.1",
@@ -33,13 +24,11 @@
     "eject": "react-scripts eject",
     "salam": "ipconfig",
     "migrate": "node migrate.js",
-    "clean": "node clean.js",
-    "proxy": "http://172.20.140.143:8060"
+    "clean": "node clean.js"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "Swash"
   },
-  "proxy": "http://172.20.140.185:8080/AccessToAccount",
   "browserslist": [
     ">0.2%",
     "not dead",
