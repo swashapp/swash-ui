@@ -2,9 +2,10 @@
   "name": "Swash",
   "version": "0.1.0",
   "private": true,
+  "homepage": "./",
   "dependencies": {
     "mdbootstrap": "^4.7.7",
-    "mdbreact": "^4.13.0",
+    "mdbreact": "^4.13.0",    
     "node-html-parser": "^1.1.12",
     "react": "^16.10.0",
     "react-collapse": "^4.0.3",
@@ -22,7 +23,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "salam": "ipconfig",
     "migrate": "node migrate.js",
     "clean": "node clean.js"
   },

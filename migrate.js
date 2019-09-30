@@ -79,7 +79,7 @@ function transform_index(err, contents){
         elx = elx.replace(/<\/script[^>]*>/,"")
         if(elx.length>0){
             var filename = dst + "/static/js/js_file"+idx+".js"
-            contents = contents.replace(arr[idx],"<script src=\"/static/js/js_file"+idx+".js\"></script>");
+            contents = contents.replace(arr[idx],"<script src=\"./static/js/js_file"+idx+".js\"></script>");
             fs.writeFile(filename, elx, function(err) {
                 if(err) {
                     return console.log(err);
@@ -88,7 +88,7 @@ function transform_index(err, contents){
             });
         }    
     }
-    contents = contents.replace(/\/static\//g,"./static/");
+    //contents = contents.replace(/\/static\//g,"./static/");
     return contents
 }
 
