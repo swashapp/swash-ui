@@ -97,7 +97,8 @@ function transform_css(err, contents){
     if(err){
         console.log("Err", err)
     }
-    return contents.replace(/\/static\//g,"../");    
+    //return contents.replace(/\/static\//g,"../");
+    return contents;
 }
 
 if (!fs.existsSync(dst)){
