@@ -21,8 +21,8 @@
     "reactstrap": "^8.0.1"
   },
   "scripts": {
-    "start": " react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "migrate": "node migrate.js",
@@ -36,5 +36,9 @@
     "not dead",
     "not ie <= 5",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {    
+    "customize-cra": "^0.8.0",
+    "react-app-rewired": "^2.1.3"
+  }
 }

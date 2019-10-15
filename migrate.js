@@ -7,7 +7,7 @@ const fs = require('fs-extra')
 
 
 var src = "./build"
-var dst = "../surf-streamr/dashboard"
+var dst = "../swash/dashboard"
 
 for(var arg of process.argv){
     if(arg.startsWith("--src=")){

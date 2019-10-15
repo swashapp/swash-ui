@@ -2,18 +2,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 
 
-
-
-
-
-
-
-
-
-
-
-# Zare
-
 ## 1 - Install
 
 ### `npm install`
