@@ -37,7 +37,7 @@
     "not ie <= 5",
     "not op_mini all"
   ],
-  "devDependencies": {    
+  "devDependencies": {
     "customize-cra": "^0.8.0",
     "react-app-rewired": "^2.1.3"
   }
