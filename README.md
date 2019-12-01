@@ -1,6 +1,6 @@
 # Swash App UI
 
-TODO description
+This project is a [React project](https://reactjs.org/) containing the user-interface for the dashboard of [SwashApp project](https://gitlab.com/surf-streamr/firefox). Swash app is a browser extension for selling surfing data and earning money. for more information visit: https://swashapp.io
 
 ## Getting Started
 
