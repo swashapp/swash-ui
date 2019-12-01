@@ -4,40 +4,52 @@ TODO description
 
 ## Getting Started
 
-### 1 - Install
+In this directory, you can run following scripts to build and migrate the UI to the main Swash project:
+
+### Install
+
+First install dependencies if needed:
 
 ```
 npm install
 ```
 
-### 2 - Fix
+In some cases, you need to run the following command as well:
 
 ```
 npm audit fix
 ```
 
-### 3 - Start
+### Start
+
+You can start the app in development mode before migrate:
+
 
 ```
 npm start
 ```
 
-### 4 - Build
+Open http://localhost:3000 in the browser.
+
+### Build and Migrate
+
+Builds the app for production to the `build` folder.
 
 ```
 npm run build
 ```
 
+Then you can migrate code to the swash app project using this command:
+
 ```
 npm run migrate
 ```
 
-you can use 
+The default migration location is `../swash/dashboard`. You can change migration location by:
+
 ```
 npm run migrate -- --dst=../firefox/dashboard2
 ``` 
-
-if you want to change dst folder or src.
 
 ## Authors
 
