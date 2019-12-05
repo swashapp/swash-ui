@@ -26,7 +26,7 @@ You can start the app in development mode before migrate:
 
 
 ```
-npm start
+npm run start
 ```
 
 Open http://localhost:3000 in the browser.
