@@ -1,6 +1,6 @@
 # Swash App UI
 
-This project is a [React project](https://reactjs.org/) containing the user-interface for the dashboard of [SwashApp project](https://gitlab.com/surf-streamr/firefox). Swash app is a browser extension for selling surfing data and earning money. for more information visit: https://swashapp.io
+This project is a [React project](https://reactjs.org/) containing the user-interface for the dashboard of [SwashApp project](https://github.com/swashapp/swash). Swash app is a browser extension for selling surfing data and earning money. for more information visit: https://swashapp.io
 
 ## Getting Started
 
@@ -8,7 +8,14 @@ In this directory, you can run following scripts to build and migrate the UI to 
 
 ### Install
 
-First install dependencies if needed:
+First clone the code
+
+```
+git clone https://github.com/swashapp/swash-ui
+cd swash-ui
+```
+
+Then install dependencies if needed:
 
 ```
 npm install
@@ -48,15 +55,15 @@ npm run migrate
 The default migration location is `../swash/dashboard`. You can change migration location by:
 
 ```
-npm run migrate -- --dst=../firefox/dashboard2
+npm run migrate -- --dst=../swash/dashboard2
 ``` 
 
 ## Authors
 
 * **Ebrahim Khalilzadeh**  - [ebkhalilzadeh](https://github.com/ebkhalilzadeh)
 * **Mehrdad Abdi**  - [mabdi](https://github.com/mabdi)
-* **Masoud Sarabadani**  - [mabdi](https://github.com/mabdi)
+* **Masoud Sarabadani**  - [sarab2009](https://github.com/sarab2009)
 
 ## License
 
-This project is licensed under the Attribution-NonCommercial-ShareAlike 3.0 Unported License - see the [LICENSE.md](https://github.com/swashapp/swashapp/master/LICENSE.md) file for details
+This project is licensed under the Attribution-NonCommercial-ShareAlike 4.0 International License - see the [LICENSE.md](LICENSE.md) file for details
