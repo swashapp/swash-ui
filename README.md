@@ -11,7 +11,7 @@ In this directory, you can run following scripts to build and migrate the UI to 
 First clone the code
 
 ```
-git clone https://github.com/swashapp/swash-ui
+git clone https://github.com/swashapp/swash-ui.git
 cd swash-ui
 ```
 
