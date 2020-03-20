@@ -120,7 +120,8 @@ if (!fs.existsSync(dst+ "/static/media")){
 
 
 console.log('copying folder static')
-copy_folder(src + "/",dst + "/", [
+copy_folder(src + "/",dst + "/", [			
+			{filter:".*favicon\.ico$",callback:null,binary:true}, 
             {filter:".*index\.html$",callback:transform_index}, 
             {filter:".*\.css$",callback:transform_css},
             {filter:".*\.map$",callback:null},
