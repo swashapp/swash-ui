@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "./",
   "dependencies": {
+    "@material-ui/core": "^4.11.0",
     "bip39": "^3.0.2",
     "mdbootstrap": "^4.8.0",
     "mdbreact": "^4.13.0",
@@ -48,6 +49,7 @@
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.20.5",
+    "fs-extra": "^9.0.1",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
     "pkg": "^4.4.8",
