@@ -3,7 +3,7 @@
     "browser": true,
     "es2020": true
   },
-  "extends": ["plugin:prettier/recommended", "plugin:react/recommended"],
+  "extends": ["plugin:prettier/recommended", "plugin:react/recommended", "plugin:no-unsanitized/DOM"],
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
@@ -13,5 +13,10 @@
   },
   "plugins": ["prettier", "react"],
   "rules": {},
-  "parser": "babel-eslint"
+  "parser": "babel-eslint",
+  "settings": {
+    "react": {
+      "version": "latest"
+    }
+  }
 }
