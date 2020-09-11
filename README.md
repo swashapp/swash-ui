@@ -1,6 +1,8 @@
 # Swash App UI
 
-This project is a [React project](https://reactjs.org/) containing the user-interface for the dashboard of [SwashApp project](https://github.com/swashapp/swash). Swash app is a browser extension for selling surfing data and earning money. for more information visit: https://swashapp.io
+This project is a [React project](https://reactjs.org/) containing the user-interface for the dashboard of
+[SwashApp project](https://github.com/swashapp/swash). Swash app is a browser extension for selling surfing data and earning money. for more
+information visit: https://swashapp.io
 
 ## Getting Started
 
@@ -31,7 +33,6 @@ npm audit fix
 
 You can start the app in development mode before migrate:
 
-
 ```
 npm run start
 ```
@@ -56,13 +57,7 @@ The default migration location is `../swash/dashboard`. You can change migration
 
 ```
 npm run migrate -- --dst=../swash/dashboard2
-``` 
-
-## Authors
-
-* **Ebrahim Khalilzadeh**  - [ebkhalilzadeh](https://github.com/ebkhalilzadeh)
-* **Mehrdad Abdi**  - [mabdi](https://github.com/mabdi)
-* **Masoud Sarabadani**  - [sarab2009](https://github.com/sarab2009)
+```
 
 ## License
 
