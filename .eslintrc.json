@@ -12,7 +12,9 @@
     "sourceType": "module"
   },
   "plugins": ["prettier", "react"],
-  "rules": {},
+  "rules": {
+    "linebreak-style": 0
+  },
   "parser": "babel-eslint",
   "settings": {
     "react": {
