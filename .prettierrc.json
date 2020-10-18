@@ -7,5 +7,6 @@
   "bracketSpacing": false,
   "jsxBracketSameLine": true,
   "arrowParens": "always",
-  "proseWrap": "always"
+  "proseWrap": "always",
+  "endOfLine": "auto"
 }
