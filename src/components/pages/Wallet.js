@@ -216,7 +216,7 @@ class SettingsPage extends React.Component {
           this.getBalanceInfo().then();
           this.notifyRef.current.handleNotification('Rewards are claimed successfully', 'success');
         } else {
-          this.notifyRef.current.handleNotification('Failed to claim rewards', 'error');
+          this.notifyRef.current.handleNotification(`${result.message ? result.message : 'Failed to claim rewards'}`, 'error');
         }
         this.setState({claimBtn: 'Claim'});
       },
